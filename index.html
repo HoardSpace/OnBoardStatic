@@ -5,6 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <!--Some simple JavaScript to show that your HTML Document is NOT the same thing as the DOM Tree in DevTools. If you don't understand this, don't worry.-->
+    <script> 
+      var para = document.createElement("p");
+      var node = document.createTextNode("This is new.");
+      para.appendChild(node);
+      var element = document.getElementById("Author");
+      element.appendChild(para);
+    </script>
   </head>  
   <body>
    <!--This is a (mostly) blank HTML Document. You'll be filling it in as you go.-->
