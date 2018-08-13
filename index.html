@@ -1,36 +1,38 @@
 <!DOCTYPE html>
-<!-- This is an HTML comment. It doesn't show up in the page. It's ju
-     Below is a (mostly) blank HTML document. You'll be filling it in as you go. -->
+<!-- This is an HTML comment. Comments don't show up in the page. They're just for developers
+     to leave notes to each other about the page's code. Below is a (mostly) blank HTML document.
+     You'll be filling it in as you go. -->
 <html lang="en">
   <head>
-    <!-- Meta tags provide metadata about the page that help browsers understand how the page should be represented. -->
+    <!-- Meta tags provide metadata about the page that help browsers understand
+         how the page should be represented. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  </head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
   <body>
     <p> Your site!</p>
+    <!-- div elements represent a section of the document. -->
     <div class="About">
-     <!--This is a div element. They're used to parse sections of your document.-->
+      <!-- You'll add your own information later. -->
     </div>
    <div class="stand-out">
     </div>
     <div class="Author" id="Author">
-
+      <!-- You'll add your own information later. -->
     </div>
     <div class="nav">
         <ul>
           <li>Home</li>
-          <!--We'll add information to the contact page later.-->
           <li>Contact</li>
         </ul>
     </div>
-    
-    <!--Some simple JavaScript to show that your HTML Document is NOT the same thing as the DOM Tree in DevTools. If you don't understand this, don't worry. You'll get there.-->
+    <!-- Some simple JavaScript to show that the HTML document is NOT the same thing as the DOM.
+         If you don't understand this, don't worry. You'll get there. -->
     <script> 
       var newdiv = document.createElement("div");
-      newdiv.appendChild(document.createTextNode("A new element!?!"));
-     document.body.appendChild(newdiv);
+      newdiv.textContent = "A new element!?!";
+      document.body.appendChild(newdiv);
     </script>
   </body>
 </html>
